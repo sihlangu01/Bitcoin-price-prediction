@@ -1,96 +1,49 @@
 # Bitcoin-price-prediction
+## Bitcoin Price Prediction and reccomendation system
 
-### **📌 Project Overview**
+**Introduction**
 
-This project performs Exploratory Data Analysis (EDA) on Bitcoin price data to uncover trends, volatility, trading volume variations, and seasonality. The analysis includes visualizing price trends, identifying outliers, detecting anomalies, and understanding the correlation between trading volume and price fluctuations. Additionally, this project emphasizes statistical techniques such as moving averages, hypothesis testing, and time series decomposition to highlight deeper insights.
+Bitcoin, a leading cryptocurrency, exhibits high price volatility, making accurate price prediction crucial for investors and traders. This project leverages machine learning to forecast Bitcoin prices and provide actionable trading recommendations.
 
-### **📂 Dataset**
+**📝Project Overview**
 
-The dataset contains historical Bitcoin price information with the following key columns:
+This project involves several key steps:
 
-**Timestamp** – Date and time of recorded price.
+1. **Data Collection:** Gathering historical Bitcoin price data from reliable sources.
+2. **Data Preprocessing:** Cleaning and preparing the data for model training, which includes handling missing values, formatting dates, and potentially engineering new features.
+3. **Exploratory Data Analysis (EDA):** Analyzing the data to identify trends, patterns, and outliers, which helps in understanding the data's characteristics and informing model selection.
+4. **Model Selection:** Choosing an appropriate machine learning model. In this case, we've selected a Long Short-Term Memory (LSTM) neural network due to its ability to handle time series data and capture long-term dependencies.
+5. **Model Training:** Training the LSTM model on the historical data to learn the patterns and relationships in Bitcoin's price movements.
+6. **Model Evaluation:** Evaluating the model's performance using metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²) to assess its accuracy and generalization ability.
+7. **Trading Strategy Development:** Developing a trading strategy based on the model's predictions, which includes setting thresholds for buy, sell, and hold signals.
+8. **Dashboard Creation:** Building an interactive dashboard to visualize the model's predictions, trading recommendations, and relevant performance metrics.
 
-**Open** – Opening price of Bitcoin for the given period.
+**Objectives**
 
-**High** – Highest price within the period.
+* Develop an accurate machine learning model to predict future Bitcoin prices.
+* Generate clear trading recommendations (buy, sell, or hold) based on the predictions.
+* Create a user-friendly interactive dashboard to visualize the predictions and aid in decision-making.
 
-**Low** – Lowest price within the period.
+**Methodology**
 
-**Close** – Closing price.
+* **LSTM Model:** We utilize a Long Short-Term Memory (LSTM) neural network, a type of deep learning model well-suited for sequential data like Bitcoin prices, as it can capture long-term dependencies and patterns.
+* **Data:** Historical Bitcoin price data is used to train and evaluate the model.
+* **Evaluation:** Model performance is assessed using metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²) to measure accuracy and goodness-of-fit.
 
-**Volume** – Total trading volume.
+**Dashboard**
 
-**Hour** – Extracted hour from the timestamp to analyze intraday trends.
+An interactive dashboard will be developed to visualize the model's predictions and trading recommendations, providing a user-friendly interface for investors and traders.
 
-**Month** – Extracted month to observe seasonal patterns.
+**Disclaimer**
 
-**Year** – Extracted year to identify long-term trends.
+**📌This project is for informational purposes only and does not constitute financial advice. Investing in cryptocurrencies involves significant risk. Always conduct your own research and consult with a qualified financial advisor before making any investment decisions.**
 
-### 📊 Key Questions Answered
 
-**1️⃣ Bitcoin Price Trends & Volatility**
 
-How has Bitcoin price evolved over time?
 
-What were the highest and lowest Bitcoin prices recorded?
 
-When were the most volatile periods in Bitcoin history?
 
-What are the moving averages (e.g., 7-day, 30-day) of Bitcoin prices?
 
-**2️⃣ Trading Volume & Market Activity**
-
-How does trading volume vary over time?
-
-How does trading volume change monthly and yearly?
-
-What time of day has the highest trading volume?
-
-Is there a statistical correlation between volume and price changes?
-
-**3️⃣ Seasonality & Patterns**
-
-Does Bitcoin exhibit seasonal trends?
-
-What is the correlation between price change and trading volume?
-
-Do certain days of the week have more price movements?
-
-Can we detect cyclical patterns using time series decomposition?
-
-**4️⃣ Extreme Events & Anomalies**
-
-Were there sudden crashes or price spikes?
-
-What were the top 5 biggest single-day gains & losses?
-
-How do price trends vary by time of day?
-
-Are there statistically significant outliers in the price movement?
-
-**5️⃣ Comparisons & Correlations**
-
-How are Open, High, Low, and Close prices correlated?
-
-Does trading volume impact price changes?
-
-Are there any outlier transactions with extremely high volume?
-
-How do hypothesis tests confirm relationships between price movements and trading volume?
-
-### ⚙️ Installation & Setup
-
-To run the analysis, install the required libraries:
-
-**pip install pandas matplotlib seaborn scipy statsmodels**
-
-Clone the repository and navigate to the project folder:
-
-**git clone https://github.com/yourusername/bitcoin-eda.git**
-
-**cd bitcoin-eda**
-
-### 📝 Usage
 
 
 
