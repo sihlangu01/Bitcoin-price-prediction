@@ -7,16 +7,20 @@ Bitcoin, a leading cryptocurrency, exhibits high price volatility, making accura
 
 **📝Project Overview**
 
-This project involves several key steps:
+This project is structured across three Jupyter notebooks, each focusing on a distinct phase of development:
 
-1. **Data Collection:** Gathering historical Bitcoin price data from reliable sources.
-2. **Data Preprocessing:** Cleaning and preparing the data for model training, which includes handling missing values, formatting dates, and potentially engineering new features.
-3. **Exploratory Data Analysis (EDA):** Analyzing the data to identify trends, patterns, and outliers, which helps in understanding the data's characteristics and informing model selection.
-4. **Model Selection:** Choosing an appropriate machine learning model. In this case, we've selected a Long Short-Term Memory (LSTM) neural network due to its ability to handle time series data and capture long-term dependencies.
-5. **Model Training:** Training the LSTM model on the historical data to learn the patterns and relationships in Bitcoin's price movements.
-6. **Model Evaluation:** Evaluating the model's performance using metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²) to assess its accuracy and generalization ability.
-7. **Trading Strategy Development:** Developing a trading strategy based on the model's predictions, which includes setting thresholds for buy, sell, and hold signals.
-8. **Dashboard Creation:** Building an interactive dashboard to visualize the model's predictions, trading recommendations, and relevant performance metrics.
+**1. Data Cleaning & Exploratory Data Analysis (EDA):**
+This notebook focuses on the initial data processing. It covers the manipulation and cleaning of raw Bitcoin price data.
+It also provides informative insights into Bitcoin's price performance over the years, including volatility analysis and other relevant observations.
+
+**2. LSTM Model Development & Evaluation:**
+This notebook details the steps involved in training the Long Short-Term Memory (LSTM) model.
+It demonstrates how the model performs its predictions, including evaluations and performance metrics.
+It concludes with insights and conclusions derived from the model's performance.
+
+**3. Interactive Streamlit Dashboard:**
+This notebook outlines the steps taken to build an interactive Streamlit dashboard.
+The dashboard allows for the visualization of model predictions, trading recommendations, and other relevant data..
 
 **Objectives**
 
